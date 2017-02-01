@@ -47,9 +47,9 @@ class NotificationCenterDelegate(NSObject):
     '''Class to implement required NSUserNotificationCenterDelegate methods'''
     # See https://developer.apple.com/reference/foundation/
     #         nsusernotificationcenterdelegate?language=objc
-    
+
     keepRunning = True
-    
+
     def userNotificationCenter_didActivateNotification_(
             self, center, notification):
         handle_notification_user_info(notification.userInfo())
@@ -93,9 +93,9 @@ def notify(title, subtitle, text, bundleid=None, url=None):
     nc.deliverNotification_(notification)
 
     # keep running until the notification is activated
-    while (nc_delegate.keepRunning):
-       NSRunLoop.currentRunLoop().runUntilDate_(
-           NSDate.dateWithTimeIntervalSinceNow_(0.1))
+    while (my_delegate.keepRunning):
+        NSRunLoop.currentRunLoop().runUntilDate_(
+            NSDate.dateWithTimeIntervalSinceNow_(0.1))
 
 
 notify(u'Updates available', u'', u'Software updates are available.',

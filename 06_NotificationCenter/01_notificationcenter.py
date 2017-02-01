@@ -17,10 +17,10 @@ def notify(title, subtitle, text):
     notification.setTitle_(title)
     notification.setSubtitle_(subtitle)
     notification.setInformativeText_(text)
-    
+
     # get the default User Notification Center
     nc = NSUserNotificationCenter.defaultUserNotificationCenter()
-    
+
     # tell the notification center to deliver the user notification
     nc.deliverNotification_(notification)
 

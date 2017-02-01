@@ -55,7 +55,7 @@ https://gist.github.com/pudquick/097f97f4cb67c554f04dba6b5a09a506
 Nibbler:
 https://github.com/pudquick/nibbler
 
-More links
+More links:
 http://www.mactech.com/articles/mactech/Vol.25/25.08/2508MacEnterprise-SystemFrameworkScripting/index.html
 
 https://managingosx.wordpress.com/2015/02/02/command-line-tools-via-python-and-cocoa/

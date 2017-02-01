@@ -18,17 +18,17 @@ from LocalAuthentication import LAPolicyDeviceOwnerAuthentication
 
 def authenticate(reason=''):
     '''Authenticate via Touch ID if possible, or user password if not'''
-    
+
     class AuthStatus(object):
         '''Tracks the results of our authorization attempt'''
         def __init__(self):
             '''Initializes our instance variables'''
             self.result = None
             self.error = None
-            
+
         def reply_handler(self, success, error):
             '''This is used in place of the callable block for
-            LAContext's - evaluatePolicy:localizedReason:reply: 
+            LAContext's - evaluatePolicy:localizedReason:reply:
             to get the result of the attempted authentication'''
             if success:
                 self.result = True
@@ -51,7 +51,7 @@ def authenticate(reason=''):
             auth_status.reply_handler)
 
         while auth_status.result is None:
-            # wait for reply handler to fire and set 
+            # wait for reply handler to fire and set
             pass
 
         if auth_status.error:
