@@ -34,6 +34,9 @@ https://developer.apple.com/reference/corefoundation/1666648-preferences_utiliti
 NSWorkspace:
 https://developer.apple.com/reference/appkit/nsworkspace?language=objc
 
+NSRunningApplication:
+https://developer.apple.com/reference/appkit/nsrunningapplication?language=objc
+
 NSScreen:
 https://developer.apple.com/reference/appkit/nsscreen?language=objc
 
